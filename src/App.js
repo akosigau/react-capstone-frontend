@@ -14,8 +14,8 @@ import Profile from "./components/profile.component";
 import BoardUser from "./components/board-user.component";
 import BoardAdmin from "./components/board-admin.component";
 import GoalsContent from "./components/goal.component";
-import EventsContent from "./components/events.component";
 import ContactForm from "./components/support.component";
+import EventsPage from "./pages/EventsPage";
 
 
 // import AuthVerify from "./common/auth-verify";
@@ -294,7 +294,7 @@ class App extends Component {
                 </div>
 
                 <Routes>
-                  <Route path="/*" element={<EventsContent />} />
+                  <Route path="/*" element={<EventsPage />} />
                 </Routes>
               </div>
             } />
@@ -348,10 +348,8 @@ class App extends Component {
                 </Routes>
               </div>
             } />
-
             <Route path="/user" element={<BoardUser />} />
             <Route path="/admin" element={<BoardAdmin />} />
-
           </Routes>
 
         </div>

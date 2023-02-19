@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from "axios";
 
-const API_URL = "https://sthenos-backend.onrender.com/api/auth/";
+const API_URL = "http://localhost:8080/api/auth/";
 
 class AuthService {
   login(username, password) {
